@@ -30,7 +30,7 @@ struct DetailView: View{
             }
             
         List {
-            TextField("Enter Student Name", text: $university.nameString, onCommit: {
+            TextField("Enter The Eatery Name", text: $university.nameString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
                         try? viewContext.save()
@@ -39,14 +39,14 @@ struct DetailView: View{
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .scaledToFit()
             
-            TextField("Enter Student Name", text: $university.locationString, onCommit: {
+            TextField("Enter location", text: $university.locationString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
                         try? viewContext.save()
                    })
             .font(.body)
             .scaledToFit()
-            TextField("Enter Student Name", text: $university.noteString, onCommit: {
+            TextField("Enter note", text: $university.noteString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
                         try? viewContext.save()
@@ -57,7 +57,7 @@ struct DetailView: View{
                     .fontWeight(.bold)
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     .scaledToFit()
-            TextField("Enter Student Name", text: $university.reviewString, onCommit: {
+            TextField("Enter review", text: $university.reviewString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
                         try? viewContext.save()
@@ -69,12 +69,3 @@ struct DetailView: View{
     
 }
 
-// struct StudentRowView: View {
-//    @Environment(\.managedObjectContext) private var viewContext
-//    @ObservedObject var student: Student
-//    var body: some View {
-//        TextField("Enter Student Name", text: $student.nameString, onCommit: {
-//            try? viewContext.save()
-//        }).onDisappear(perform: {
-//            try? viewContext.save()
-//       })
