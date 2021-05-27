@@ -15,6 +15,7 @@
 		A86E9CAE265F63AF00A9437F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CAD265F63AF00A9437F /* LocationView.swift */; };
 		A86E9CB3265F63FB00A9437F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */; };
 		A86E9CB8265F640600A9437F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CB7265F640600A9437F /* MapView.swift */; };
+		A86E9CBD265F661C00A9437F /* LocationViewModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CBC265F661C00A9437F /* LocationViewModel+Extension.swift */; };
 		A89F09C4264D61C700EAB383 /* UniversitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F09C3264D61C700EAB383 /* UniversitiesApp.swift */; };
 		A89F09C6264D61C700EAB383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F09C5264D61C700EAB383 /* ContentView.swift */; };
 		A89F09C8264D61C700EAB383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89F09C7264D61C700EAB383 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		A86E9CAD265F63AF00A9437F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		A86E9CB7265F640600A9437F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A86E9CBC265F661C00A9437F /* LocationViewModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationViewModel+Extension.swift"; sourceTree = "<group>"; };
 		A89F09C0264D61C700EAB383 /* Universities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89F09C3264D61C700EAB383 /* UniversitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesApp.swift; sourceTree = "<group>"; };
 		A89F09C5264D61C700EAB383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				A86E9CAD265F63AF00A9437F /* LocationView.swift */,
 				A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */,
 				A86E9CB7265F640600A9437F /* MapView.swift */,
+				A86E9CBC265F661C00A9437F /* LocationViewModel+Extension.swift */,
 				A810E069264D7695002A88E8 /* RowView.swift */,
 				A846828E264DF1740099A035 /* EateriesViewModel.swift */,
 				A89F09C7264D61C700EAB383 /* Assets.xcassets */,
@@ -335,6 +338,7 @@
 				A810E06F264D78AA002A88E8 /* DetailView.swift in Sources */,
 				A89F09CD264D61C700EAB383 /* Persistence.swift in Sources */,
 				A86E9CB8265F640600A9437F /* MapView.swift in Sources */,
+				A86E9CBD265F661C00A9437F /* LocationViewModel+Extension.swift in Sources */,
 				A89F09C6264D61C700EAB383 /* ContentView.swift in Sources */,
 				A810E06A264D7695002A88E8 /* RowView.swift in Sources */,
 				A86E9CAE265F63AF00A9437F /* LocationView.swift in Sources */,

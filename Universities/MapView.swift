@@ -15,7 +15,7 @@ struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView(frame: .zero)
         //implement the delegation to change
-        
+        mapView.delegate = viewModel
         return mapView
     }
     //the UIView region will change after user drag the map and change the coordinate

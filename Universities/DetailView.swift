@@ -10,19 +10,19 @@ import CoreData
 
 struct DetailView: View{
     @Environment(\.managedObjectContext) private var viewContext
-    @ObservedObject var university: University
+    @ObservedObject var model: University
     let eateriesviewmodel = EateriesViewModel()
     @Environment(\.editMode) var editMode
     
     
     var body: some View {
         VStack(spacing: 1.0) {
-            eateriesviewmodel.download(university.imageString)
+            eateriesviewmodel.download(model.imageString)
                 .resizable()
                 .scaledToFit()
             
             if editMode?.wrappedValue == .active {
-                TextField("Enter image URL.", text: $university.imageString, onCommit: {
+                TextField("Enter image URL.", text: $model.imageString, onCommit: {
                     try? viewContext.save()
                 }).onDisappear(perform: {
                     try? viewContext.save()
@@ -30,7 +30,7 @@ struct DetailView: View{
             }
             
         List {
-            TextField("Enter The Eatery Name", text: $university.nameString, onCommit: {
+            TextField("Enter The Eatery Name", text: $model.nameString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
                         try? viewContext.save()
@@ -41,7 +41,7 @@ struct DetailView: View{
             
             NavigationLink("Location: \(model.locationString)" ,destination: LocationView(model: model, place: LocationViewModel(university: model)))
             
-            TextField("Enter note", text: $university.noteString, onCommit: {
+            TextField("Enter note", text: $model.noteString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
                         try? viewContext.save()
@@ -52,7 +52,7 @@ struct DetailView: View{
                     .fontWeight(.bold)
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     .scaledToFit()
-            TextField("Enter review", text: $university.reviewString, onCommit: {
+            TextField("Enter review", text: $model.reviewString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
                         try? viewContext.save()

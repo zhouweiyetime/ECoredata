@@ -24,7 +24,7 @@ struct MasterView: View{
         List {
             ForEach(higherEd.universitiesArray) { uni in
                 NavigationLink(
-                    destination: DetailView(university: uni),
+                    destination: DetailView(model: uni),
                     label:{
                         RowView(university: uni)
                     })
