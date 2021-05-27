@@ -22,5 +22,8 @@ extension University {
     @NSManaged public var review: String?
     @NSManaged public var image: String?
     @NSManaged public var country: HigherEd?
-
+    @NSManaged public var latitude: Double
+    @NSManaged public var longitude: Double
+    @NSManaged public var longitudetitle: String?
+    @NSManaged public var latitudetitle: String?
 }
