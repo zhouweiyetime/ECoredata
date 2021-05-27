@@ -12,6 +12,9 @@
 		A810E06A264D7695002A88E8 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810E069264D7695002A88E8 /* RowView.swift */; };
 		A810E06F264D78AA002A88E8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810E06E264D78AA002A88E8 /* DetailView.swift */; };
 		A846828F264DF1740099A035 /* EateriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846828E264DF1740099A035 /* EateriesViewModel.swift */; };
+		A86E9CAE265F63AF00A9437F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CAD265F63AF00A9437F /* LocationView.swift */; };
+		A86E9CB3265F63FB00A9437F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */; };
+		A86E9CB8265F640600A9437F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CB7265F640600A9437F /* MapView.swift */; };
 		A89F09C4264D61C700EAB383 /* UniversitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F09C3264D61C700EAB383 /* UniversitiesApp.swift */; };
 		A89F09C6264D61C700EAB383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F09C5264D61C700EAB383 /* ContentView.swift */; };
 		A89F09C8264D61C700EAB383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89F09C7264D61C700EAB383 /* Assets.xcassets */; };
@@ -57,6 +60,9 @@
 		A846826F264DE0300099A035 /* University+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "University+CoreDataClass.swift"; path = "Universities/code/University+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A8468270264DE0300099A035 /* University+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "University+CoreDataProperties.swift"; path = "Universities/code/University+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A846828E264DF1740099A035 /* EateriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateriesViewModel.swift; sourceTree = "<group>"; };
+		A86E9CAD265F63AF00A9437F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		A86E9CB7265F640600A9437F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A89F09C0264D61C700EAB383 /* Universities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89F09C3264D61C700EAB383 /* UniversitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesApp.swift; sourceTree = "<group>"; };
 		A89F09C5264D61C700EAB383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,10 +158,13 @@
 				A89F09C3264D61C700EAB383 /* UniversitiesApp.swift */,
 				A89F09C5264D61C700EAB383 /* ContentView.swift */,
 				A810E05F264D6E01002A88E8 /* MasterView.swift */,
-				A810E06E264D78AA002A88E8 /* DetailView.swift */,
-				A810E069264D7695002A88E8 /* RowView.swift */,
 				A810E064264D6FFD002A88E8 /* HigherEd+ViewModel.swift */,
 				A89F0A17264D648100EAB383 /* University+ViewModel.swift */,
+				A810E06E264D78AA002A88E8 /* DetailView.swift */,
+				A86E9CAD265F63AF00A9437F /* LocationView.swift */,
+				A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */,
+				A86E9CB7265F640600A9437F /* MapView.swift */,
+				A810E069264D7695002A88E8 /* RowView.swift */,
 				A846828E264DF1740099A035 /* EateriesViewModel.swift */,
 				A89F09C7264D61C700EAB383 /* Assets.xcassets */,
 				A89F09CC264D61C700EAB383 /* Persistence.swift */,
@@ -325,8 +334,11 @@
 				A810E060264D6E01002A88E8 /* MasterView.swift in Sources */,
 				A810E06F264D78AA002A88E8 /* DetailView.swift in Sources */,
 				A89F09CD264D61C700EAB383 /* Persistence.swift in Sources */,
+				A86E9CB8265F640600A9437F /* MapView.swift in Sources */,
 				A89F09C6264D61C700EAB383 /* ContentView.swift in Sources */,
 				A810E06A264D7695002A88E8 /* RowView.swift in Sources */,
+				A86E9CAE265F63AF00A9437F /* LocationView.swift in Sources */,
+				A86E9CB3265F63FB00A9437F /* LocationViewModel.swift in Sources */,
 				A89F09C4264D61C700EAB383 /* UniversitiesApp.swift in Sources */,
 				A89F0A18264D648100EAB383 /* University+ViewModel.swift in Sources */,
 				A89F09D0264D61C700EAB383 /* Universities.xcdatamodeld in Sources */,

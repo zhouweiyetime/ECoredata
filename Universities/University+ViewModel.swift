@@ -43,7 +43,29 @@ extension University {
         managedObjectContext ?? NSManagedObjectContext(concurrencyType:NSManagedObjectContextConcurrencyType.mainQueueConcurrencyType)
     }
     
-
+    var latitudeString: String {
+        get { String(self.latitude)}
+        set {
+            guard let doubleValue = Double(newValue) else {return}
+            self.latitude = doubleValue
+        }
+    }
+    //property of longitude
+    var longitudeString: String {
+        get { String(self.longitude)}
+        set {
+            guard let doubleValue = Double(newValue) else {return}
+            self.longitude = doubleValue
+        }
+    }
+    //property of coordinates
+    var coordinates: CLLocationCoordinate2D {
+        get { CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)}
+        set {
+            self.latitude = newValue.latitude
+            self.longitude = newValue.longitude
+        }
+    }
 
 }
 
