@@ -16,6 +16,9 @@
 		A86E9CB3265F63FB00A9437F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */; };
 		A86E9CB8265F640600A9437F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CB7265F640600A9437F /* MapView.swift */; };
 		A86E9CBD265F661C00A9437F /* LocationViewModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E9CBC265F661C00A9437F /* LocationViewModel+Extension.swift */; };
+		A86E9CC3265F6B8600A9437F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86E9CC2265F6B8600A9437F /* MapKit.framework */; };
+		A86E9CC5265F6BA300A9437F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86E9CC4265F6BA300A9437F /* CoreLocation.framework */; };
+		A86E9CC7265F6BAE00A9437F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86E9CC6265F6BAE00A9437F /* CoreData.framework */; };
 		A89F09C4264D61C700EAB383 /* UniversitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F09C3264D61C700EAB383 /* UniversitiesApp.swift */; };
 		A89F09C6264D61C700EAB383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F09C5264D61C700EAB383 /* ContentView.swift */; };
 		A89F09C8264D61C700EAB383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89F09C7264D61C700EAB383 /* Assets.xcassets */; };
@@ -65,6 +68,9 @@
 		A86E9CB2265F63FB00A9437F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		A86E9CB7265F640600A9437F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A86E9CBC265F661C00A9437F /* LocationViewModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationViewModel+Extension.swift"; sourceTree = "<group>"; };
+		A86E9CC2265F6B8600A9437F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A86E9CC4265F6BA300A9437F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A86E9CC6265F6BAE00A9437F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A89F09C0264D61C700EAB383 /* Universities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89F09C3264D61C700EAB383 /* UniversitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesApp.swift; sourceTree = "<group>"; };
 		A89F09C5264D61C700EAB383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86E9CC7265F6BAE00A9437F /* CoreData.framework in Frameworks */,
+				A86E9CC5265F6BA300A9437F /* CoreLocation.framework in Frameworks */,
+				A86E9CC3265F6B8600A9437F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +138,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A86E9CC1265F6B8600A9437F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A86E9CC6265F6BAE00A9437F /* CoreData.framework */,
+				A86E9CC4265F6BA300A9437F /* CoreLocation.framework */,
+				A86E9CC2265F6B8600A9437F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A89F09B7264D61C600EAB383 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +160,7 @@
 				A89F09E4264D61C700EAB383 /* UniversitiesUITests */,
 				A810E07D264D8251002A88E8 /* UniversitiesCoreData */,
 				A89F09C1264D61C700EAB383 /* Products */,
+				A86E9CC1265F6B8600A9437F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

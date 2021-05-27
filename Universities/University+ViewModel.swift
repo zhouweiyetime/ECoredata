@@ -43,6 +43,7 @@ extension University {
         managedObjectContext ?? NSManagedObjectContext(concurrencyType:NSManagedObjectContextConcurrencyType.mainQueueConcurrencyType)
     }
     
+    //property of latitude
     var latitudeString: String {
         get { String(self.latitude)}
         set {
