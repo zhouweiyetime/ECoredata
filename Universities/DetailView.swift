@@ -39,13 +39,8 @@ struct DetailView: View{
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .scaledToFit()
             
-            TextField("Enter location", text: $university.locationString, onCommit: {
-                        try? viewContext.save()
-                    }).onDisappear(perform: {
-                        try? viewContext.save()
-                   })
-            .font(.body)
-            .scaledToFit()
+            NavigationLink("Location: \(model.locationString)" ,destination: LocationView(model: model, place: LocationViewModel(university: model)))
+            
             TextField("Enter note", text: $university.noteString, onCommit: {
                         try? viewContext.save()
                     }).onDisappear(perform: {
